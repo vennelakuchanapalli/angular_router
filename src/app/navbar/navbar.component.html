@@ -1,0 +1,18 @@
+<div class="navbar">
+  <div class="leftnav">
+    <ul>
+      <li><a routerLink="/dashboard">ProductList</a></li>
+      <li><a routerLink="/userlist">Userlist</a></li>
+      <li><a routerLink="/productsadd">Add Product</a></li>
+      <li><a routerLink="/cart">Cart</a></li>
+
+      <li><a routerLink="/profile">Profile</a></li>
+    </ul>
+  </div>
+  <div class="rightnav">
+    <span class="span">{{name}}</span>
+    <span class="logout" routerLink="logout" (click)="logout()">Logout </span>
+    
+  </div>
+
+</div>

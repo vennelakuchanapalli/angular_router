@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div>
+  <div class="alert alert-success" *ngIf = "msg.length>0" role="alert">
+    {{ msg }}
+  </div>
+  <h3 class="mb-4 text-center" *ngIf="cartlist.length == 0">No Items added to Cart</h3>
+  <div class="container mb-4" *ngFor="let cart of cartlist; let i = index">
+    <div class="card">
+      <div class="card-body carddiv">
+        <h5 class="card-title">{{ cart.product_name }}</h5>
+        <p>Price: {{ cart.price }}</p>
+        <div class="d-flex align-items-center">
+          <button class="btn btn-primary p-3 mr-2" (click)="decrementQuantity(cart)" [disabled]="cart.quantity <= 1">-</button>
+          <span id="quantity" class="mr-2 p-3">{{ cart.quantity }}</span>
+          <button class="btn btn-primary p-3 mr-2" (click)="incrementQuantity(cart)">+</button>
+          <button class="btn btn-danger p-3 m-3" (click)="deleteProduct(cart)">Delete</button>
+        </div>
+        <p class="mt-3 total-price">Total Price: {{ calculateItemTotal(cart) }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  <div *ngIf="cartlist.length > 0" class="container">
+    <h3 class="text-right">Grand Total: {{ totalAmount }}</h3>
+  </div>
+  

@@ -1,0 +1,47 @@
+<div class="card-body">
+   
+    <!-- <div class="alert alert-danger" role="alert">
+      {{msg}}
+      </div> -->
+  <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username"><br><br>
+
+      <label for="userpassword">userpassword:</label>
+      <input type="text" id="userpassword" name="userpassword" [(ngModel)]="userpassword"><br><br>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="useremail"><br><br>
+  
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" [(ngModel)]="userfirst_name"><br><br>
+  
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" [(ngModel)]="userlast_name"><br><br>
+  
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" [(ngModel)]="useraddress"><br><br>
+  
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" [(ngModel)]="usercity"><br><br>
+  
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" [(ngModel)]="userstate"><br><br>
+  
+      <label for="zip_code">Zip Code:</label>
+      <input type="text" id="zip_code" name="zip_code" [(ngModel)]="userzip_code"><br><br>
+  
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" [(ngModel)]="usercountry"><br><br>
+  
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" [(ngModel)]="userphone"><br><br>
+    
+      <p id="para">{{msg}}</p>
+      <button (click)="register()">Register</button>
+      <p>Already registered? <a [routerLink]="['/login']">Go to login</a></p>
+    </form>
+  </div>
+ 
+
+  

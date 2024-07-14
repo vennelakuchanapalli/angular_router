@@ -1,0 +1,12 @@
+.card {
+    margin: 20px;
+   
+}
+.carddiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.total-price {
+    font-weight: bold;
+}

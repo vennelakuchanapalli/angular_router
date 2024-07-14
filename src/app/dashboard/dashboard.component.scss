@@ -1,0 +1,66 @@
+/* Style for the product details container */
+#card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.product-details {
+    max-width: 300px;
+    // margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #dedbdb;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-details:hover {
+
+    background-color: #bebbbb;
+}
+
+/* Style for the product name */
+.product-details h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style for the product image */
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style for the product description and other details */
+.product-details p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Highlight important information like price and SKU */
+.product-details p strong {
+    color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .product-details {
+        padding: 15px;
+    }
+
+    .product-details h1 {
+        font-size: 20px;
+    }
+
+    .product-details p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,40 @@
+
+
+<!-- <input type="text" placeholder="Name" [(ngModel)]="pdtname"/>
+
+<input type="text" placeholder="description" [(ngModel)]="pdtdescription"/>
+<input type="number" placeholder="price" [(ngModel)]="pdtprice"/>
+<input type="text" placeholder="SKU" [(ngModel)]="pdtsku"/>
+<input type="text" placeholder="category" [(ngModel)]="pdtcategory"/>
+<input type="text" placeholder="stock_quantity" [(ngModel)]="pdtstock"/>
+
+
+<button (click) = "addProduct()" >Add</button> -->
+<div class="container mt-5">
+    <h2>Add Product</h2>
+    <form>
+      <div class="form-group p-3 " >
+        <label for="pdtname">Name</label>
+        <input type="text" id="pdtname" class="form-control mt-2" placeholder="Name" [(ngModel)]="pdtname" name="pdtname" required>
+      </div>
+      <div class="form-group  p-3 ">
+        <label for="pdtdescription">Description</label>
+        <input type="text" id="pdtdescription" class="form-control mt-2" placeholder="Description" [(ngModel)]="pdtdescription" name="pdtdescription" required>
+      </div>
+      <div class="form-group p-3 " >
+        <label for="pdtprice">Price</label>
+        <input type="number" id="pdtprice" class="form-control mt-2" placeholder="Price" [(ngModel)]="pdtprice" name="pdtprice" required>
+      </div>
+      <div class="form-group p-3 ">
+        <label for="pdtcategory">Category</label>
+        <input type="text" id="pdtcategory" class="form-control mt-2" placeholder="Category" [(ngModel)]="pdtcategory" name="pdtcategory" required>
+      </div>
+      <div class="form-group p-3 ">
+        <label for="pdtstock">Stock Quantity</label>
+        <input type="text" id="pdtstock" class="form-control mt-2" placeholder="Stock Quantity" [(ngModel)]="pdtstock" name="pdtstock" required>
+      </div>
+    </form>
+          <button type="submit" class="btn btn-primary mt-3  btn-wide" (click)="addProduct()" >Add</button>
+
+  </div>
+  

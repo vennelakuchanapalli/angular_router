@@ -1,0 +1,31 @@
+<!-- <div id="card">
+<div class="product-details" >
+    
+  </div>
+</div> -->
+<!-- <div id="cartdiv">
+    <button (click)="addToCart(i)">Add to cart</button>
+   <h1>{{productlist. product[i].userid }}</h1>
+    <h1>{{productlist. product[i].id }}</h1>
+    <p>Stock Quantity: {{productlist. product [i].stock_quantity }}</p>
+
+  </div>  -->
+ <app-navbar></app-navbar>
+<div class="row">
+  <div class="alert alert-success" role="alert" *ngIf="msg.length> 0">
+    {{msg}}
+    </div>
+  <div class="col-3 " *ngFor="let product of productlist ; let i= index">
+    <div class="card m-3 p-3" style="width: 100%;">
+      <h1>{{ product.name }}</h1>
+      <p>{{ product.description }}</p>
+      <p>Price: ${{ product.price }}</p>
+      <p>SKU: {{ product.sku }}</p>
+      <p>Category: {{ product.category }}</p>
+      <p>Stock Quantity: {{ product.stock_quantity }}</p>
+      <p>Created At: {{ product.created_at }}</p>
+      <p>Updated At: {{ product.updated_at }}</p>
+      <button class="btn btn-primary" (click)="addItemsToCart(product) ">Add to cart</button>
+    </div>
+  </div>
+</div>
